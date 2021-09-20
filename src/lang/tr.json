@@ -1,0 +1,75 @@
+{
+    "pages": {
+        "homepage": {
+            "title": "Anasayfa"
+        },
+        "contact": {
+            "title": "İletişim"
+        },
+        "login": {
+            "title": "Giriş"
+        },
+        "notfound": {
+            "title": "Sayfa bulunamadı."
+        }
+    },
+    "login": {
+        "title": "Giriş"
+    },
+    "quote":{
+        "message": "Sahip olmaya değer herhangi bir şeye erişmek için her şeye tüm kalbinizle gitmelisiniz.",
+        "quoted": "Frank Lloyd Wright"
+    },
+    "bauhaus": {
+        "par1": "Mevcut grafik tasarım trendini görürsek, Bauhaus Hareketi üzerinde bir miktar ilham ve doğrudan etki görebiliriz ve Minimalist Grafik Tasarım Kuralları hakkındaki yazımı okuduysanız, minimalizm ve Bauhaus'un aynı İşlev ilkesini paylaşan doğrudan ilişkili olduğunu bileceksiniz. Görsel Üstüne.",
+        "par2": "Grafik Tasarımın Bauhaus akımıyla tonlarca benzerlik taşıması ve ondan etkilenmesi, Bauhaus'un minimalist bir tasarım tarzı olması nedeniyle, sadece birkaç öğeyi kullanmaları ve hepsinin bir işleve sahip olması gerekmesi, bu gerçeği incelemeye odaklanmalarını sağlamıştır. Şekil psikolojisi, renk teorisi, görsel hiyerarşi ve temel tasarım ilkelerini bu blogda tek bir postta bulabilirsiniz, çünkü modern grafik tasarım da bu ilkeleri takip eder."
+    },
+    "footer": {
+        "company": "Dummy LTD.",
+        "contactus": "İletişim",
+        "sitemap": "Site Haritası"
+    },
+    "contactform": {
+        "title": "İletişim",
+        "send": "Gönder",
+        "fields": {
+            "title": "Başlık",
+            "name": "İsim",
+            "email": "E-posta",
+            "phone": "Telefon Numarası",
+            "country": "Ülke",
+            "text": "Mesajınız..."
+        },
+        "errors": {
+            "phone": "Telefon numarasında sadece numra kullanılabilir",
+            "error": "Formda bir veya birden çok hata var.",
+            "mailformat": "Geçersiz mail formatı"
+        }
+    },
+    "countries": {
+        "tr": "Türkiye",
+        "us": "Amerika Birleşik Devletleri",
+        "gb": "Birleşik Krallık",
+        "de": "Almanya",
+        "se": "İsveç",
+        "ke": "Kenya",
+        "br": "Brezilya",
+        "zw": "Zimbabwe"
+    },
+    "loginform": {
+        "title": "Giriş",
+        "name": "İsim",
+        "email": "E-posta",
+        "pass": "Şifre",
+        "login": "Giriş",
+        "invalid": "Eksik yata hatalı form.",
+        "logout": "Çıkış"
+    },
+    "close": "kapat",
+    "remove": "sil",
+    "notfound": {
+        "msg": "Sayfa bulunamadı.",
+        "back": "Geri git...",
+        "home": "Ana sayfaya git..."
+    }
+}

@@ -1,0 +1,52 @@
+@import './variables';
+@import './breakpoint';
+
+.form-component{
+    .form-field{
+        input, textarea, .form-select{
+            border-radius: 5px;
+            border-width: 0;
+            padding: 16px 16px;
+            margin-top: 16px;
+            background-color: adjust-color($color: $c-light, $lightness: -2%);
+            width: 100%;
+            &:focus, &:focus-visible, &:focus-within{
+                outline: none;
+            }
+
+            &:focus-visible {
+                -webkit-box-shadow: 0px 0px 4px 0px rgba(115, 115, 115, 1);
+                -moz-box-shadow:    0px 0px 4px 0px rgba(115, 115, 115, 1);
+                box-shadow:         0px 0px 4px 0px rgba(115, 115, 115, 1);
+            }
+            &.error{
+                background-color: adjust-color($color: $c-primary, $lightness: 35%);
+            }
+        }
+        textarea{
+            min-height: 150px;
+            resize: vertical;
+        }
+    }
+    &.error{
+        .form-field{
+            input, textarea{
+                background-color: adjust-color($color: $c-primary, $lightness: 35%);
+            }
+        }
+    }
+    .form-select {
+        cursor: pointer;
+    }
+
+}
+
+.button-primary {
+    background-color: $c-primary;
+    color: $c-light;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 16px 16px;
+    margin-top: 16px;
+    width: 100%;
+}

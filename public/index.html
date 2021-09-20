@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy</title>
+    <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyODQuMzIgMjg0LjIzIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2VlMmIyOTt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yNzIuNTgsODUuODVhMTM4LjgyLDEzOC44MiwwLDAsMC0yMS0zMy43NUExNDEuOCwxNDEuOCwwLDEsMCw1NS44NSwyNTQuNThhMTM3LjA5LDEzNy4wOSwwLDAsMCwzMy41MywxOS4xNywxNDAuMTgsMTQwLjE4LDAsMCwwLDUzLjE0LDEwLjQ4LDE0Mi4xLDE0Mi4xLDAsMCwwLDE0MS44LTE0MiwxNDAuNCwxNDAuNCwwLDAsMC0xMS43NC01Ni4zOFpNMTQyLjQxLDI4Ljk0YTExMi4xNSwxMTIuMTUsMCwwLDEsNDcuMzcsMTAuNDhoMGE0Ni4zNSw0Ni4zNSwwLDAsMS0xMS4zMSwzLjI1QTYwLjA2LDYwLjA2LDAsMCwwLDEyNy42NCw5My41YTMxLjQ0LDMxLjQ0LDAsMCwxLTI4LjQsMjcuNzdBNjAuMDYsNjAuMDYsMCwwLDAsNDguNDEsMTcyLjFhMzAuNTMsMzAuNTMsMCwwLDEtOC4yOCwxOC4yM2gwQTExMy4xOCwxMTMuMTgsMCwwLDEsMTQyLjUyLDI4LjczWk01NS43NCwyMTUuNTljMS4yNi0xLjE1LDIuNTItMi4yLDMuNzgtMy40NmE1Ny40NCw1Ny40NCwwLDAsMCwxNy0zMy44NSwzMC42LDMwLjYsMCwwLDEsOS4xMi0xOS4wNywyOS42NSwyOS42NSwwLDAsMSwxOS05LDYwLjA2LDYwLjA2LDAsMCwwLDUwLjgzLTUwLjgzLDMwLjU1LDMwLjU1LDAsMCwxLDkuMTItMjAsMzAsMzAsMCwwLDEsMTkuMTgtOC43LDU3LjQ3LDU3LjQ3LDAsMCwwLDMxLjQ0LTE1QTExMC4xMSwxMTAuMTEsMCwwLDEsMjM5Ljg4LDg0LjhhOS40Miw5LjQyLDAsMCwxLTEuMzYsMS40NiwzMC4wOCwzMC4wOCwwLDAsMS0xOSw5LjIzLDU5LjgzLDU5LjgzLDAsMCwwLTUwLjgzLDUwLjgzLDMxLjQ0LDMxLjQ0LDAsMCwxLTI4LjE5LDI4LjA4LDYwLjM3LDYwLjM3LDAsMCwwLTUxLjE1LDUwLjgzLDMyLjkxLDMyLjkxLDAsMCwxLTUuMTMsMTQuMzYsMTE0LjM5LDExNC4zOSwwLDAsMS0yOC41MS0yNFpNMTQyLjQxLDI1NmExMTMuNzgsMTEzLjc4LDAsMCwxLTMxLjQ0LTQuNCw2MC41Niw2MC41NiwwLDAsMCw2LjcxLTIxLDMxLjQ2LDMxLjQ2LDAsMCwxLDI4LjA5LTI4LjA5LDYwLjA1LDYwLjA1LDAsMCwwLDUwLjkzLTUwLjgyLDMxLjQzLDMxLjQzLDAsMCwxLDI4LjA5LTI4LjA5LDYwLDYwLDAsMCwwLDI2LjgzLTEwLjQ4QTExMy40LDExMy40LDAsMCwxLDE0Mi40MSwyNTUuNTJaIi8+PC9nPjwvZz48L3N2Zz4=" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <script src="https://kit.fontawesome.com/0cf0a38676.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Application">
+        <login-modal></login-modal>
+        <loading-screen :active=loadingScreenActive></loading-screen>
+        <navbar></navbar>
+        <sidebar></sidebar>
+        <div style="padding-top: 65px">
+            <router-view></router-view>
+        </div>
+        <site-footer></site-footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

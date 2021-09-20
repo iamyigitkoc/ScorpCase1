@@ -1,0 +1,31 @@
+{
+  "name": "scorpproject1",
+  "version": "1.0.0",
+  "description": "Case made as a solution for Scorp Sample Project 1",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "mix watch",
+    "build": "mix build",
+    "serve": "serve"
+  },
+  "author": "Yigit Koc",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.12",
+    "bootstrap": "^5.1.1",
+    "laravel-mix": "^6.0.31",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.41.1",
+    "sass-loader": "^12.1.0",
+    "vue": "^2.6.14",
+    "vue-i18n": "^8.25.1",
+    "vue-loader": "^15.9.8",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "^2.6.14",
+    "vue-youtube": "^1.4.0"
+  },
+  "dependencies": {
+    "serve": "^12.0.1"
+  }
+}

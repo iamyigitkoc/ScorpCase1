@@ -1,0 +1,75 @@
+{
+    "pages": {
+        "homepage": {
+            "title": "Homepage"
+        },
+        "contact": {
+            "title": "Contact"
+        },
+        "login": {
+            "title": "Login"
+        },
+        "notfound": {
+            "title": "Page Not Found."
+        }
+    },
+    "login": {
+        "title": "Login"
+    },
+    "quote":{
+        "message": "You have to go wholeheartedly into anything in order to achieve anything worth having.",
+        "quoted": "Frank Lloyd Wright"
+    },
+    "bauhaus": {
+        "par1": "If we see the current graphic design trend we can easily see some inspiration and direct influence on Bauhaus Movement, and if you have read my post about Minimalist Graphic Design Rules, you will know that minimalism and Bauhaus are directly related sharing the same principle of Function Over Visual.",
+        "par2": "Graphic Design owes tons of similarities with Bauhaus movement and gets influenced by it, as a Bauhaus was a minimalist design style, they only used a few elements and all of them needed to have a function, this fact made that they were focus on studying the shape psychology, color theory, visual hierarchy and basic design principles which you have a single post in this blog talking about all of them because the modern graphic design also follows those principles."
+    },
+    "footer": {
+        "company": "Dummy LLC.",
+        "contactus": "Contact Us",
+        "sitemap": "Sitemap"
+    },
+    "contactform": {
+        "title": "Contact",
+        "send": "Send",
+        "fields": {
+            "title": "Title",
+            "name": "Name",
+            "email": "E-mail",
+            "phone": "Phone Number",
+            "country": "Country",
+            "text": "Your message..."
+        },
+        "errors": {
+            "phone": "Only numbers can be used in phone number.",
+            "error": "There's single or multiple errors on form.",
+            "mailformat": "Invalid mail format."
+        }
+    },
+    "countries": {
+        "tr": "Turkey",
+        "us": "United States of America",
+        "gb": "United Kingdom",
+        "de": "Germany",
+        "se": "Sweden",
+        "ke": "Kenya",
+        "br": "Brasil",
+        "zw": "Zimbabwe"
+    },
+    "loginform": {
+        "title": "Login",
+        "name": "Name",
+        "email": "E-mail",
+        "pass": "Password",
+        "login": "Login",
+        "invalid": "Missing or invalid form.",
+        "logout": "Logout"
+    },
+    "close": "close",
+    "remove": "remove",
+    "notfound": {
+        "msg": "Page not found.",
+        "back": "Go back...",
+        "home": "Go to home page..."
+    }
+}
