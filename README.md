@@ -1,5 +1,20 @@
 # Scorp Sample Project
 
+## v1.1 Fixes:
+
+- Contact form had a bug when loggedin user info was updating.
+    - This bug includes name field being valid but error check doesn't pass.
+    - Phonenumber error is no more a push notification
+    - There shouldn't be a title field
+    - User name and email autofill was buggy. When component was mounted, default states would be user name and email when user was logged in and when user logged out this defaults prevented removing user info.
+- Localization
+    - Language selector was not localized
+    - Page had a loading animation to hide language change, this has been removed to show that it was not reloading the page.
+- Country Suggestion
+    - Suggestion was listing all available countries and was working like filter rather than suggestion. Now it only shows the countries whenever user input is not empty.
+    - Regex matching updated to match only starting of the name rather than matching any part of the name.
+
+
 ## Implementation details:
 
 This project implements every features given in the project specifications. On top the specification, I tried to add my own flavor into both frontend code and design.

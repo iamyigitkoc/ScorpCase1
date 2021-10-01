@@ -97,7 +97,9 @@ export default {
     });
 
     this.fields.email.value = this.$root.user.loggedin ? this.$root.user.email : "";
+    this.fields.email.error = false;
     this.fields.name.value = this.$root.user.loggedin ? this.$root.user.name : "";
+    this.fields.name.error = false;
   },
   components: FormComponents,
   methods: {
@@ -134,6 +136,12 @@ export default {
       if(error <= 0){
         console.log(JSON.stringify(servmsg));
         this.fields = JSON.parse(JSON.stringify(this.defaults));
+        if(this.$root.user.loggedin){
+            this.fields.email.value = this.$root.user.loggedin ? this.$root.user.email : "";
+            this.fields.email.error = false;
+            this.fields.name.value = this.$root.user.loggedin ? this.$root.user.name : "";
+            this.fields.name.error = false;
+        }
         this.$forceUpdate();
       }else{
         ebus.$emit('formNotification', this.$t('contactform.errors.error'));
