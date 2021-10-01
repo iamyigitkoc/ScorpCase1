@@ -6,7 +6,7 @@
     <div class="login-modal-content">
       <div class="container-fluid py-3 px-4">
         <div class="row">
-          <div class="col-6"> <language-selector style="text-align:left !important;"></language-selector></div>
+          <div class="col-6"> <language-selector style="text-align:left !important;" ></language-selector></div>
           <div class="col-6"> <div class="close-btn noselect" @click="toggleForm()">{{ $t('close') }}</div></div>
           <div class="col-12">
             <login-form></login-form>

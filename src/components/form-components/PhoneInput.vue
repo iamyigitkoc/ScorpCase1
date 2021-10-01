@@ -1,6 +1,7 @@
 <template>
   <basic-input :class="{error: value.error}">
-      <input type="text" ref="phoneinput" :value="value.value" @input="valueInput()" :placeholder="$t('contactform.fields.phone')" v-bind:class="{error: error}">
+      <input type="text" ref="phoneinput" :value="value.value" @input="valueInput()" :placeholder="$t('contactform.fields.phone') + (value.required ? '*' : '')" v-bind:class="{error: error}">
+      <div class="mail-hint" :class="{'d-none': !value.error}">{{$t('contactform.errors.phone')}}</div>
   </basic-input>
 </template>
 
@@ -21,7 +22,7 @@ export default {
         valueInput(){
             
             let err = this.checkErrors();
-            if(err) this.pushError(this.$t('contactform.errors.phone'));
+            //if(err) this.pushError(this.$t('contactform.errors.phone'));
             this.$emit("input", 
             {
                 value: err ? this.value.value : this.$refs.phoneinput.value, 

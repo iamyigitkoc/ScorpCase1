@@ -37,7 +37,7 @@
             "name": "İsim",
             "email": "E-posta",
             "phone": "Telefon Numarası",
-            "country": "Ülke",
+            "country": "Ülke arayın",
             "text": "Mesajınız..."
         },
         "errors": {
@@ -65,6 +65,7 @@
         "invalid": "Eksik yata hatalı form.",
         "logout": "Çıkış"
     },
+    "language": "Dil",
     "close": "kapat",
     "remove": "sil",
     "notfound": {

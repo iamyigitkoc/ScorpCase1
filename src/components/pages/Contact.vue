@@ -8,9 +8,6 @@
           </div>
         </div>
         <div class="row form-area">
-          <div class="col-12">
-            <text-input :label="$t('contactform.fields.title')" v-model="fields.title"></text-input>
-          </div>
           <div class="col-12 col-lg-6">
             <text-input :label="$t('contactform.fields.name')" v-model="fields.name"></text-input>
             
@@ -55,18 +52,13 @@ export default {
   data(){
     return {
       fields: {
-        title: {
+        name: {
           value: "",
           required: true,
           error: false
         },
-        name: {
-          value: this.$root.user.loggedin ? this.$root.user.name : "",
-          required: true,
-          error: false
-        },
         email: {
-          value: this.$root.user.loggedin ? this.$root.user.email : "",
+          value: "",
           required: true,
           error: false
         },
@@ -103,25 +95,21 @@ export default {
         }
       }
     });
+
+    this.fields.email.value = this.$root.user.loggedin ? this.$root.user.email : "";
+    this.fields.name.value = this.$root.user.loggedin ? this.$root.user.name : "";
   },
   components: FormComponents,
   methods: {
     send(){
       let error = 0;
       let servmsg = {
-        title: this.fields.title.value,
         name: this.fields.name.value,
         email: this.fields.email.value,
         phonenumber: this.fields.phone.value,
         country_code: this.fields.country.value,
         text: this.fields.text.value
       };
-
-      //Bad implementation, has to change but I got no time
-      if(this.fields.title.error){
-        error++;
-      }
-
       if(this.fields.name.error){
         error++;
       }

@@ -1,6 +1,6 @@
 <template>
   <basic-input :class="{error: value.error}">
-      <input type="text" ref="mailinput" :value="value.value" @input="valueInput()" :placeholder="$t('contactform.fields.email')">
+      <input type="text" ref="mailinput" :value="value.value" @input="valueInput()" :placeholder="$t('contactform.fields.email') + (value.required ? '*' : '')">
       <div class="mail-hint" :class="{'d-none': !value.error}">{{$t('contactform.errors.mailformat')}}</div>
   </basic-input>
 </template>

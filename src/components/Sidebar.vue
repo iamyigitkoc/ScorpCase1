@@ -18,7 +18,7 @@
             <user></user>
         </div>
         <div class="sidebar-language-selection">
-            <language-selector pretext="Language"></language-selector>
+            <language-selector :pretext="$t('language')"></language-selector>
         </div>
   </div>
 </template>

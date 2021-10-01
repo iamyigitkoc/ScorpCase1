@@ -37,7 +37,7 @@
             "name": "Name",
             "email": "E-mail",
             "phone": "Phone Number",
-            "country": "Country",
+            "country": "Search countries",
             "text": "Your message..."
         },
         "errors": {
@@ -65,6 +65,7 @@
         "invalid": "Missing or invalid form.",
         "logout": "Logout"
     },
+    "language": "Language",
     "close": "close",
     "remove": "remove",
     "notfound": {

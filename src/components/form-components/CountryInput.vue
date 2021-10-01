@@ -6,7 +6,7 @@
       </div>
       <div class="country-search-wrapper">
         <div class="country-search" :class="{'d-none': !searchdisplay}">
-                <input class="no-shadow input-field" type="text" v-model="search">
+                <input class="no-shadow input-field" type="text" :placeholder="$t('contactform.fields.country')" v-model="search">
                 <ul class="suggestion-list noselect">
                     <li @click="changeCountry(country.id)" v-for="country in countrySearch" v-bind:key="country.id">{{ country.name }}</li>
                 </ul>
@@ -65,9 +65,9 @@ export default {
                 if(this.search.length > 0){
                     let res = [];
                     let cs = this.$root.countryList;
+                    let regx = new RegExp('^'+this.search.toLowerCase()+'');
                     cs.forEach(c => {
                         let added = false;
-                        let regx = new RegExp('('+this.search.toLowerCase()+')');
                         if(regx.test(c.id.toLowerCase())){
                             res.push(c);
                             added = true;
@@ -82,7 +82,7 @@ export default {
                 }
             }
             
-            return this.$root.countryList;
+            return [];
         }
     }
 }
@@ -105,6 +105,9 @@ export default {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         .input-field{
+            &::placeholder{
+                color: adjust-color($color:  $c-primary, $lightness: 25%);
+            }
             margin: 0 !important;
             background-color: $c-primary !important;
             color: $c-light !important;

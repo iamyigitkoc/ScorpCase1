@@ -1,6 +1,6 @@
 <template>
   <basic-input v-bind="$props">
-      <input :type="itype" :placeholder=" label !== undefined ? label : '' " :value="value.value" @input="valueInput()" ref="textinput"/>
+      <input :type="itype" :placeholder=" (label !== undefined ? label : ''  ) + (value.required ? '*' : '')" :value="value.value" @input="valueInput()" ref="textinput"/>
   </basic-input>
 </template>
 

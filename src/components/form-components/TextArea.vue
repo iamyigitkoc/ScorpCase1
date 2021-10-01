@@ -1,6 +1,6 @@
 <template>
   <basic-input>
-      <textarea :value="value.value" @input="valueInput()" ref="textarea" :placeholder="$t('contactform.fields.text')"></textarea>
+      <textarea :value="value.value" @input="valueInput()" ref="textarea" :placeholder="$t('contactform.fields.text') + (value.required ? '*' : '')"></textarea>
   </basic-input>
 </template>
 
